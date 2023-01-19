@@ -29,7 +29,8 @@ class Factory implements StatesFactory
         int|null $previous = null,
         DateTimeInterface|string|null $createdAt = null,
         DateTimeInterface|string|null $expiresAt = null
-    ): State {
+    ): State
+    {
         return $this->makeFromArray([
             'id' => $id,
             'previous' => $previous,
